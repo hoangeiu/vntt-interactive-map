@@ -1,0 +1,97 @@
+<div class="modal fade" id="customerModal" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="customerModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark font-weight-bold" id="customerModalTitle">Kết nối khách hàng</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="customerModal" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control text-dark id" readonly>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control text-dark code" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Core<span style="color: red;"><sup>*</sup></span></label>
+                        <select data-placeholder="" class="form-control core" name="core" required></select>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="radio1">
+                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                                    checked>Đấu nhảy
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="radio2">
+                                <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                    value="option2">Đấu ST
+                            </label>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-row" id="jump">
+                        <div class="form-group col-md-6">
+                            <label>Port<span style="color: blue;"><sup>*</sup></span></label>
+                            <select data-placeholder="" class="form-control cabinetPortIn" name="cabinetPortIn"
+                                required></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port<span style="color: red;"><sup>*</sup></span></label>
+                            <select data-placeholder="" class="form-control cabinetPort" name="cabinetPortOut"
+                                required></select>
+                        </div>
+                    </div>
+                    <div class="form-row" id="over">
+                        <div class="form-group col-md-4">
+                            <label>ST<span style="color: blue;"><sup>*</sup></span></label>
+                            <select data-placeholder="" class="form-control splitter" name="splitter" required></select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>STout<span style="color: red;"><sup>*</sup></span></label>
+                            <select data-placeholder="" class="form-control splitterOut" name="splitterOut"
+                                required></select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Port<span style="color: red;"><sup>*</sup></span></label>
+                            <select data-placeholder="" class="form-control cabinetPort" name="cabinetPortOut"
+                                required></select>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group">
+                        <label>Tìm khách hàng</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="param" placeholder="Thông tin khách hàng"
+                                aria-label="Recipient's username" aria-describedby="search-customer">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="search-customer">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Khách hàng<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control customer" name="customer" required></select>
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <span style="color: blue; font-size: 11px;">* Trường tự động điền</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

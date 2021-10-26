@@ -1,0 +1,124 @@
+<div class="modal fade" id="cableMD" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="cableMDTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark font-weight-bold" id="cableMDTitle">Thông tin tuyến cáp</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="cableMD" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control id" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control code" />
+                        </div>
+                    </div>
+                    <!-- <div class="form-group" id="copy">
+                        <label>Copy from</label>
+                        <select class="form-control copy"></select>
+                    </div> -->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Tên tuyến<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="text" name="name" class="form-control name" placeholder="Ký hiệu tuyến quang"
+                                autocomplete="off" maxlength="40" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Kết nối</label>
+                            <input type="text" name="connection" class="form-control connection" placeholder="Kết nối"
+                                autocomplete="off" maxlength="40" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Dung lượng sợi<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="number" name="capacity" class="form-control capacity"
+                                placeholder="Dung lượng sợi" autocomplete="off" min="1" required />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Chiều dài toàn tuyến</label>
+                            <div class="input-group">
+                                <input type="number" name="length" class="form-control length"
+                                    placeholder="Chiều dài toàn tuyến" autocomplete="off" min="1" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary btn-success text-dark font-weight-bold"
+                                        id="calCable" type="button">CAL</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Mã cáp NSX</label>
+                            <input type="text" name="reference" class="form-control reference" placeholder="Mã cáp NSX"
+                                autocomplete="off" maxlength="40" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Thời gian xây dựng</label>
+                            <input type="text" name="date" class="form-control date" placeholder="Thời gian xây dựng"
+                                autocomplete="off" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Loại cáp<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control type" name="type" required>
+                            <option></option>
+                            <option value="1">Cáp trục</option>
+                            <option value="2">Cáp nhánh</option>
+                            <option value="3">Cáp lastmile</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <label>Thuộc tính</label>
+                            <div class="">
+                                <button type="button" class="btn btn-info all-slings">Tất cả treo</button>
+                                <button type="button" class="btn btn-danger all-underground">Tất cả ngầm</button>
+                            </div>
+                        </div>
+
+                        <div id="mutiple-attribute">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>POP<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control pop" name="pop" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="">Điểm đầu<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control start" name="start">
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="">Điểm cuối<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control end" name="end">
+                                <option value="0"></option>
+                            </select>
+                        </div>
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold" data-dismiss="modal">
+                            CLOSE
+                        </button>
+                        <button type="submit" class="btn btn-primary font-weight-bold" id="cableSubmit">
+                            SUBMIT
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

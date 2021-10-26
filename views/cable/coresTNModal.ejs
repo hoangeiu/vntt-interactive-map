@@ -1,0 +1,52 @@
+<div class="modal fade" id="coresTNMD" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="coresTNMDTitle" aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white font-weight-bold" id="coresTNMDTitle">Thêm nhiều core</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="coresTNMD" class="text-dark font-weight-bold">
+                    <div class="form-group">
+                        <label>Số core<span style="color: red;"><sup>*</sup></span></label>
+                        <input type="number" name="core" class="form-control text-dark font-weight-bold core"
+                            placeholder="Số core" autocomplete="off" required min="1" max="144">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Tên core<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="text" name="prefix" class="form-control prefix" maxlength="40" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>STT<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="number" name="startNumber" class="form-control startNumber" min="1" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ODF<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control text-dark ODF" name="ODF" required></select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Port đầu<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark beginPort" name="beginPort" required></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port cuối<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark endPort" name="endPort" required></select>
+                        </div>
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

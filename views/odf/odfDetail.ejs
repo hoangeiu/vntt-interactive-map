@@ -1,0 +1,98 @@
+<div class="modal fade" id="odfDetailMD" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="coreODFModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content border-dark">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white font-weight-bold" id="coreODFModalTitle">Kết nối</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="odfDetailMD" class="text-dark font-weight-bold">
+                    <div class="form-group" style="display: none;">
+                        <label>Id</label>
+                        <input type="text" name="id" class="form-control text-dark id">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-9">
+                            <label>Tên kết nối</label>
+                            <input type="text" name="name" class="form-control text-dark name" placeholder="Tên kết nối"
+                                autocomplete="off" maxlength="40">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Trạng thái</label>
+                            <select class="form-control text-dark status" name="status" required>
+                                <option></option>
+                                <option value="1">Used</option>
+                                <option value="2">Unused</option>
+                                <option value="3">Error</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>POP</label>
+                            <input type="text" name="" class="form-control text-dark font-weight-bold beginPOP"
+                                readonly>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>ODF</label>
+                            <select class="form-control text-dark beginODF" name="beginODF" required></select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Port</label>
+                            <select class="form-control text-dark beginPort" name="beginPort"></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Path</label>
+                        <div class="mb-2">
+                            <select class="form-control text-dark core" name="core" required></select>
+                        </div>
+                        <div class="mb-2">
+                            <select class="form-control text-dark core" name="core" required></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-outline-secondary btn-number mr-1" data-type="plus"
+                                data-field="quant[1]">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled"
+                                data-type="minus" data-field="quant[1]">
+                                <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>POP</label>
+                            <input type="text" name="" class="form-control text-dark font-weight-bold endPOP" readonly>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>ODF</label>
+                            <select class="form-control text-dark endODF" name="endODF" required></select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Port</label>
+                            <select class="form-control text-dark endPort" name="endPort"></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Ghi chú"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold"
+                            id="odfDetailSubmit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="modal fade" id="coreTTMD" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="coreTTMDTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white font-weight-bold" id="coreTTMDTitle">Core cáp trục</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="coreTTMD" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control id" autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control code" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tên core<span style="color: red;"><sup>*</sup></span></label>
+                        <input type="text" name="name" class="form-control text-dark font-weight-bold name"
+                            placeholder="Tên core" autocomplete="off" required maxlength="40">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>ODF đầu<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark beginODF" name="beginODF" required></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port đầu<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark beginPort" name="beginPort" required></select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>ODF đích<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark endODF" name="endODF" required></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port đích<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark endPort" name="endPort" required></select>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="error" class="form-check-input" id="errorCheckbox">
+                        <label class="form-check-label" for="errorCheckbox">Error</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Ghi chú"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

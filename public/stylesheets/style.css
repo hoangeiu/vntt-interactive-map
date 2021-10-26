@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.table tr > th {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+
+.table td {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.table td button {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.stt {
+  text-align: center;
+}
+/* 
+.code {
+  display: none;
+} */
+
+.columnId,
+.columnCode {
+  display: none;
+}
+
+/* Fix table header when sidebar hide */
+/* .dataTables_scrollHeadInner,
+.table {
+  width: 100% !important;
+} */
+
+.modal {
+  overflow-y: auto !important;
+}
+
+.modal_width_50 {
+  max-width: 50% !important;
+}
+
+.modal_width_70 {
+  max-width: 70% !important;
+}
+
+.modal_width_80 {
+  max-width: 80% !important;
+}
+
+.modal_width_90 {
+  max-width: 90% !important;
+}
+
+.globalLoading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.4);
+}
+#globalLoading .icon {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 41%;
+  /* width: 200px; */
+  height: 18%;
+}
+
+.verticalDevider {
+  border-right: 1px solid black;
+}
+
+.file {
+  visibility: hidden;
+  position: absolute;
+}

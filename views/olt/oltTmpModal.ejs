@@ -1,0 +1,84 @@
+<div class="modal fade" id="oltTmpModal" tabindex="-1" role="dialog" aria-labelledby="oltTmpModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white font-weight-bold" id="oltTmpModalTitle">Thông tin OLT</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="oltTmpModal" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control text-dark id" readonly />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control text-dark code" readonly />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tên thiết bị<span style="color: red;"><sup>*</sup></span></label>
+                        <input type="text" name="name" class="form-control text-dark name" placeholder="Tên thiết bị"
+                            autocomplete="off" required maxlength="40">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Loại thiết bị<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control type" name="type" required>
+                                <option></option>
+                                <option value="ALCATEL">ALCATEL</option>
+                                <option value="DASAN">DASAN</option>
+                                <option value="CISCO">CISCO</option>
+                                <option value="JUNIPER">JUNIPER</option>
+                                <option value="DOITAC">ĐỐI TÁC</option>
+                                <option value="KHAC">KHÁC</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Thiết bị của<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control owner" name="owner" required>
+                                <option></option>
+                                <option value="SPT">SPT</option>
+                                <option value="Viettel">Viettel</option>
+                                <option value="VNPT">VNPT</option>
+                                <option value="NTT">NTT</option>
+                                <option value="BHTVC">BHTVC</option>
+                                <option value="VNTT">VNTT</option>
+                                <option value="FPT">FPT</option>
+                                <option value="CMC">CMC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Tên port<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="text" name="portName" class="form-control text-dark portName"
+                                placeholder="Tên port" autocomplete="off" required maxlength="40">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Số lượng port<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="number" name="quantity" class="form-control text-dark quantity"
+                                placeholder="Số lượng port" autocomplete="off" required min="1" max="1000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Ghi chú"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="modal fade" id="cbDescMD" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="cbDescMDlTitle" aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content border-dark">
+            <div class="modal-header bg-danger">
+                <h5 class="modal-title text-white font-weight-bold" id="cbDescMDlTitle">Thêm chi tiết</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="cbDescMD" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control id" autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control code" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tên kết nối<span style="color: red;"><sup>*</sup></span></label>
+                        <input type="text" name="name" class="form-control text-dark name" placeholder="Tên kết nối"
+                            autocomplete="off" required maxlength="40">
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="jump" name="type" value="0" class="custom-control-input">
+                            <label class="custom-control-label" for="jump">Đấu nhảy</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="over" name="type" value="1" class="custom-control-input">
+                            <label class="custom-control-label" for="over">Đấu qua splitter</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Port In<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control portIn" name="portIn" required>
+                                <!-- <option></option> -->
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port Out<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control portOut portOutJump" name="portOut" required>
+                                <!-- <option></option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Splitter<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control splitter" name="splitter" required>
+                            <!-- <option></option> -->
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Port Out Splitter<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control portOutSplitter" name="portOutSplitter" required>
+                                <!-- <option></option> -->
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port Out Cabinet<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control portOut portOutOver" name="portOut" required>
+                                <!-- <option></option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Ghi chú"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold"
+                            id="cbDescMDSubmit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,113 @@
+<div class="modal fade" id="mxModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="mxModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark font-weight-bold" id="mxModalTitle">MX Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="mxModal" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control id">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control code">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label>Ký hiệu<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="text" name="name" class="form-control text-dark name"
+                                placeholder="Ký hiệu măng xông" autocomplete="off" required maxlength="40">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Cách điểm đầu<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="number" name="length" class="form-control text-dark length"
+                                placeholder="Cách điểm đầu" autocomplete="off" required min="1">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Ngày lắp đặt<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="text" name="date" class="form-control text-dark date"
+                                placeholder="Ngày lắp đặt" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="old" name="status" value="0" class="custom-control-input status">
+                            <label class="custom-control-label" for="old">Măng xông cũ</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="new" name="status" value="1" class="custom-control-input status">
+                            <label class="custom-control-label" for="new">Măng xông mới</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-9">
+                            <label for="">Thuộc tuyến cáp<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control cable" name="cable" required>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="">No.<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control order" name="order" required>
+                                <option></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">POP<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control pop" name="pop" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label>Image</label>
+                        <input type="file" name="img[]" class="file" accept="image/*">
+                        <div class="input-group">
+                            <input type="text" class="form-control" disabled placeholder="Upload File" id="file">
+                            <div class="input-group-append">
+                                <button type="button" class="browse btn btn-primary">Browse...</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 my-2 p-0">
+                            <img src="https://placehold.it/80x80" id="preview" class="img-thumbnail">
+                        </div>
+                    </div> -->
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold" id="mxSubmit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

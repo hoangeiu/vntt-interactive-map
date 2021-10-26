@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title><%= title %></title>
+  <link rel="shortcut icon" href="" />
+  <!-- Hot reload client page -->
+    <script src="/reload/reload.js"></script>
+
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/bootstrap/bootstrap.min.css" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="/fontawesome/css/all.css" />
+  <!-- Bootstrap Template -->
+  <link rel="stylesheet" href="/stylesheets/sb-admin-2.css" />
+  <!-- Initial Map -->
+  <link rel="stylesheet" href="/stylesheets/map.css" />
+  <!-- Select2 -->
+  <link rel="stylesheet" href="/select2/select2.min.css">
+  <link rel="stylesheet" href="/select2/select2-bootstrap4.min.css">
+  <!-- DateRangePicker -->
+  <link rel="stylesheet" href="/daterangepicker/daterangepicker.css">
+  <!-- Datatable -->
+  <link rel="stylesheet" href="/datatable/dataTables.bootstrap4.min.css" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="/lib/leaflet/leaflet.css" />
+  <!-- Leaflet MarkerClusterGroup -->
+  <link rel="stylesheet" href="/lib/leaflet.markercluster/MarkerCluster.css" />
+  <link rel="stylesheet" href="/lib/leaflet.markercluster/MarkerCluster.Default.css" />
+  <!-- Leaflet Search -->
+  <link rel="stylesheet" href="/lib/leaflet.search/leaflet-search.css" />
+  <!-- Leaflet Geoman -->
+  <link rel="stylesheet" href="/lib/leaflet-geoman/leaflet-geoman.css" />
+  <!-- Easy Button -->
+  <link rel="stylesheet" href="/lib/leaflet.easybutton/easy-button.css" />
+  <!-- Leaflet Draw -->
+  <link rel="stylesheet" href="/lib/leaflet.draw/leaflet.draw.css" />
+  <!-- Leaflet StyleEditor -->
+  <link rel="stylesheet" href="/lib/leaflet.styleeditor/Leaflet.StyleEditor.min.css" />
+  <!-- Leaflet Ruler -->
+  <link rel="stylesheet" type="text/css" href="/lib/leaflet-ruler/leaflet-ruler.css">
+
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+    rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <%include globalLoading %>
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <%include sidebar %>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <%include topbar %>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid p-0">
+          <div id="mapid"></div>
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+      <!-- End of Main Content -->
+      <%include popModal %> <%include cableModal %> <%include mxModal %> <%include cbModal %> <%include cb1Modal %>
+      <%include cb2Modal %> <%include oltModal %> <%include odfModal %> <%include splitterModal %>
+
+      <%include deleteModal %>
+
+      <%include toast %> <%include inforModal %>
+    </div>
+    <!-- End of Content Wrapper -->
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Jquery -->
+  <script src="/jquery/jquery-3.4.1.js"></script>
+  <script src="/jquery/jquery.easing.js"></script>
+  <script src="/jquery/jquery.validate.js"></script>
+  <!-- Bootstrap -->
+  <script src="/bootstrap/popper.min.js"></script>
+  <script src="/bootstrap/bootstrap.min.js"></script>
+  <!-- Select2 -->
+  <script src="/select2/select2.full.min.js"></script>
+  <!-- DateRangePicker -->
+  <script src="/daterangepicker/moment.min.js"></script>
+  <script src="/daterangepicker/daterangepicker.js"></script>
+  <!-- Bootstrap Template -->
+  <script src="/javascripts/sb-admin-2.js"></script>
+  <!-- Datatable -->
+  <script src="/datatable/jquery.dataTables.min.js"></script>
+  <script src="/datatable/dataTables.bootstrap4.min.js"></script>
+  <script src="/datatable/ellipsis.js"></script>
+
+  <!-- Leaflet -->
+  <script src="/lib/leaflet/leaflet.js"></script>
+  <!-- Leaflet Geoman -->
+  <script src="/lib/leaflet-geoman/leaflet-geoman.min.js"></script>
+  <!-- Leaflet Draw -->
+  <script src="/lib/leaflet.draw/leaflet.draw.js"></script>
+  <!-- Custome Leaflet Draw -->
+  <script src="/lib/leaflet.draw/custom-leaflet.draw.js"></script>
+  <!-- Leaflet Geometryutil -->
+  <script src="/lib/leaflet.geometryutil/leaflet.geometryutil.min.js"></script>
+  <!-- Leaflet StyleEditor -->
+  <script src="/lib/leaflet.styleeditor/Leaflet.StyleEditor.min.js"></script>
+  <!-- Easy Button -->
+  <script src="/lib/leaflet.easybutton/easy-button.js"></script>
+  <!-- Leaflet MarkerCluster -->
+  <script src="/lib/leaflet.markercluster/leaflet.markercluster-src.js"></script>
+  <!-- Leaflet Search -->
+  <script src="/lib/leaflet.search/leaflet-search.js"></script>
+  <!-- Leaflet Ruler -->
+  <script src="/lib/leaflet-ruler/leaflet-ruler.js"></script>
+  <!-- Leaflet Polylinedecorator -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.min.js"></script>
+  <!-- Leaflet Textpath -->
+  <script src="/lib/leaflet.textpath/leaflet.textpath.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+  <!-- Personal JS -->
+  <script src="/javascripts/common.js"></script>
+
+  <!-- Initial Map -->
+  <script src="/javascripts/map/icon.js"></script>
+  <script src="/javascripts/map/initialization.js"></script>
+  <script src="/javascripts/map/xhtml.js"></script>
+  <script src="/javascripts/map/modal.js"></script>
+  <script src="/javascripts/map/map.js"></script>
+  <script src="/javascripts/map/detail.js"></script>
+  <script src="/javascripts/map/clear.js"></script>
+
+</body>
+
+</html>

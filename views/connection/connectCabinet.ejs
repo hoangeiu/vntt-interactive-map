@@ -1,0 +1,51 @@
+<div class="modal fade" id="connectCabinetMD" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="connectCabinetMDTitle" aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white font-weight-bold" id="connectCabinetMDTitle">Kết nối core(cabinet)
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="connectCabinetMD" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control id" autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control code" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tên kết nối<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control text-dark connect" name="connect" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Core 1<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control text-dark core1" name="core1" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Core 2<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control text-dark core2" name="core2" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Ghi chú"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+RELEASE
+0.1
+- LOGIN FUNCTION
+- CABINET PORT: 
++ ODF portIn/Out -> total port
++ Cabinet portIn/Out -> block/tray, port/block(tray)
+	!Modal
+	!Management Page
+0.2
+Manager connections between TT, TN
+Manager OLT, port OLT
+0.3
+Fix bug cable
+Warning draw not begin or end in object
+Finish table connect TT, TN
+Finish detail connect TT, TN
+0.4
+Connect TT: Load core by pop
+Modify POP
+0.5
+Notification change Cabinet info
+0.6 (08:13 11/09/2020)
+Change name OLT -> Thiết bị
+Button add OLT
+0.7 (15:00 14/09/2020)
+Change management MX belong to cable
+Change some title
+0.7.1 (09:00 15/09/2020)
+Change some title managed-cables-tt.ejs managed-cables-tn.ejs
+Trang tạo connect TT chỉ lấy core chưa sử dụng.
+0.8.0 (14:20 15/09/2020)
+Topbar pop and effection in map
+0.9.0 (9:27 29/09/2020)
+Tạo core không yêu cầu thiết bị ban đầu, có thể cập nhật sau.
+Thêm tab quản lý khách hàng ở cabinet
+0.9.1 (15:00 30/09/2020)
+Lưu lại vị trí đang thao tác.
+0.9.2 (15:00 05/10/2020)
+Segment number
+Quickly select slings, underground
+Save lastest edit location
+Fix: 2 points same location (library bug, can not fix),
+Fix: submit lost old point, calculate cable db length, decoration
+0.9.3 (10:34 07/10/2020)
+Change create ODF (block, tray, port)
+Change create Cabinet (tray, port)
+0.10.0 (10:00 13/10/2020)
++ tạo nhiều core
+0.10.1 (11:01 16/10/2020)
++ cập nhật begin, end
++ kiểm tra connectDetail có id đó chưa, chưa có thì thêm vào
++ lấy dữ liệu thể hiện lên bảng
++ không chọn core trong cùng 1 tuyến
++ thêm số lượng kết nối trong bảng mô tả của cabinet
++ nút edit delete trong kết nối của cabinet
++ get connect cho từng pop
++ thêm trường idPop trong tạo connect TT
+0.10.2 (9:25 23/11/2020)
++ prefix -> thêm mới => done
++ bắt buộc = * => done
++ tên tủ cáp làm title => done
++ lỗi tạo kết nối toàn tuyến từng phần => done (kiểm tra lại trên server thật)
++ cabinet bỏ st, chỉnh sửa thông tin cabinet => tạo ra từng trang riêng của cabinet => done
++ hoàn thành tab khách hàng => done
++ tạo port vào trong olt (prefix + number + quantity) => hỏi thêm anh Vương => done
+0.10.3
+...
+0.10.4
+
+
+
+
+

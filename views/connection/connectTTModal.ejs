@@ -1,0 +1,117 @@
+<div class="modal fade" id="connectTTMD" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="connectTTMDTitle" aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white font-weight-bold" id="connectTTMDTitle">Kết nối cáp trục</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="connectTTMD" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control id" autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control code" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-9">
+                            <label>Tên kết nối<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="text" name="name" class="form-control text-dark font-weight-bold name"
+                                placeholder="Tên kết nối" autocomplete="off" required maxlength="40">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Trạng thái<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark status" name="status" required>
+                                <option></option>
+                                <option value="1">Used</option>
+                                <option value="0">Unused</option>
+                                <option value="2">Error</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>POP đầu<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark beginPOP" name="beginPOP" required></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>ODF<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark beginODF" name="beginODF" required></select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-9">
+                            <label>Thiết bị</label>
+                            <select class="form-control text-dark beginOLT" name="beginOLT" required></select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Port đầu</label>
+                            <input type="text" name="beginPort" class="form-control text-dark beginPort"
+                                autocomplete="off" maxlength="10">
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-group">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <label>Đấu nối</label>
+                            <div class="form-group">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-primary mr-1" id="plusConnection">
+                                        <span class="fa fa-plus" style="color: white;"></span>
+                                    </button>
+                                    <button type="button" class="btn btn btn-secondary" id="minusConnection">
+                                        <span class="fa fa-minus" style="color: white;"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="mutiple-connect">
+
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>POP đích</label>
+                            <select class="form-control text-dark font-weight-bold endPOP" name="endPOP"></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>ODF</label>
+                            <select class="form-control text-dark font-weight-bold endODF" name="endODF"></select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-9">
+                            <label>Thiết bị</label>
+                            <select class="form-control text-dark endOLT" name="endOLT"></select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Port đích</label>
+                            <input type="text" name="endPort" class="form-control text-dark endPort" autocomplete="off"
+                                maxlength="10">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Ghi chú"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;700;900&display=swap");
+
+body {
+  font: bold;
+  color: black;
+}
+
+.file {
+  visibility: hidden;
+  position: absolute;
+}
+
+#mapid {
+  height: calc(100vh - 4.375rem);
+}
+
+.captruc {
+  stroke: black;
+  stroke-width: 14;
+}
+
+.captuyen {
+  stroke: green;
+  stroke-width: 10;
+}
+
+.lastmile {
+  stroke: orange;
+  stroke-width: 4;
+}
+
+.leaflet-popup-content {
+  margin: 4px 19px !important;
+}
+
+.modal {
+  overflow-y: auto !important;
+}
+
+.modal_width_30 {
+  max-width: 30% !important;
+}
+
+.modal_width_50 {
+  max-width: 50% !important;
+}
+
+.modal_width_70 {
+  max-width: 70% !important;
+}
+
+.modal_width_80 {
+  max-width: 80% !important;
+}
+
+.modal_width_90 {
+  max-width: 90% !important;
+}
+/* ///////////////////// */
+
+.popupCable .leaflet-popup-content {
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+.popupCable .leaflet-popup-content b {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.popupCable .leaflet-popup-content button {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.popupCable .leaflet-popup-content table {
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* /////////////////////////// */
+
+.leaflet-draw-toolbar .leaflet-draw-draw-mx {
+  background: url(https://i.ibb.co/0tbfmRL/1.png) no-repeat;
+  background-size: 25px;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.leaflet-draw-toolbar .leaflet-draw-draw-cabinet {
+  background: url(https://i.ibb.co/z7Hs3B7/419-512.png) no-repeat;
+  background-size: 20px;
+  background-position: center;
+  background-color: #e74a3b;
+  border-radius: 3px;
+}
+
+.leaflet-draw-toolbar .leaflet-draw-draw-cabinetlv1 {
+  background: url(https://i.ibb.co/z7Hs3B7/419-512.png) no-repeat;
+  background-size: 20px;
+  background-position: center;
+  background-color: #ffff00;
+  border-radius: 3px;
+}
+
+.leaflet-draw-toolbar .leaflet-draw-draw-cabinetlv2 {
+  background: url(https://i.ibb.co/z7Hs3B7/419-512.png) no-repeat;
+  background-size: 20px;
+  background-position: center;
+  background-color: #4e73df;
+  border-radius: 3px;
+}
+
+.leaflet-draw-toolbar .leaflet-draw-draw-pop {
+  background: url(https://i.ibb.co/PTdN2mg/networking-01-512.png) no-repeat;
+  background-size: 20px;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.leaflet-draw-toolbar .leaflet-draw-draw-ont {
+  background: url(https://i.ibb.co/ys5fwMQ/25694.png) no-repeat;
+  background-size: 15px;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.leaflet-draw-toolbar .leaflet-draw-draw-utilitypole {
+  background: url(https://i.ibb.co/bsBF8SC/electricity.png) no-repeat;
+  background-size: 15px;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.leaflet-draw-toolbar .leaflet-draw-draw-sewer {
+  background: url(https://i.ibb.co/8r1sXg5/764435.png) no-repeat;
+  background-size: 15px;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 3px;
+}
+/* ///////////////////////////////////////////////////// */
+#detail_cable_table_wrapper,
+#olt_table_wrapper,
+#splitter_table_wrapper,
+#splitter_detail_table_wrapper,
+#odf_table_wrapper,
+#detail_cb_table_wrapper tr > th {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+
+#detail_cable_table,
+#olt_table,
+#splitter_table,
+#splitter_detail_table,
+#odf_table,
+#detail_cb_table td {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.globalLoading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.4);
+}
+#globalLoading .icon {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 41%;
+  /* width: 200px; */
+  height: 18%;
+}
+
+.codeColumn,
+.idColumn {
+  display: none;
+}

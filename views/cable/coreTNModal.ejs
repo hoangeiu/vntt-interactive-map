@@ -1,0 +1,87 @@
+<div class="modal fade" id="coreTNMD" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="coreTNMDTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal_width_50 modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-white font-weight-bold" id="coreTNMDTitle">Core cáp nhánh</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="coreTNMD" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>Id</label>
+                            <input type="text" name="id" class="form-control id" readonly>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Code</label>
+                            <input type="text" name="code" class="form-control code" readonly>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                            <label>Tên core<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="text" name="name" class="form-control text-dark font-weight-bold name"
+                                placeholder="Tên core" autocomplete="off" required maxlength="40">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label>Hư hỏng<span style="color: blue;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark font-weight-bold status" name="status" required>
+                                <option value="0">Không</option>
+                                <option value="2">Có</option>
+                                <option value="1">Used</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ODF<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control text-dark ODF" name="ODF" required></select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Port đầu<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark beginPort" name="beginPort"></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port cuối<span style="color: red;"><sup>*</sup></span></label>
+                            <select class="form-control text-dark endPort" name="endPort"></select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Thiết bị đầu</label>
+                            <select class="form-control text-dark beginDevice" name="beginDevice"></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port thiết bị đầu</label>
+                            <select class="form-control text-dark beginDevicePort" name="beginDevicePort"></select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Thiết bị đích</label>
+                            <select class="form-control text-dark endDevice" name="endDevice"></select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Port thiết bị đích</label>
+                            <select class="form-control text-dark endDevicePort" name="endDevicePort"></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Ghi chú</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Ghi chú"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

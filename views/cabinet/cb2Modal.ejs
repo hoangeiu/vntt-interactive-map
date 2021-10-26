@@ -1,0 +1,73 @@
+<div class="modal fade" id="cabinet2MD" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="cabinet2MDTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark font-weight-bold" id="cabinet2MDTitle">Thông tin cabinet lv2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="cabinet2MD" class="text-dark font-weight-bold">
+                    <div class="form-row" style="display: none;">
+                        <div class="form-group col-md-6">
+                            <label>ID</label>
+                            <input type="text" name="id" class="form-control id" readonly>
+                        </div>
+                        <div class="form-group col-md-6"">
+                            <label>Code</label>
+                            <input type=" text" name="code" class="form-control code" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tên Cabinet<span style="color: red;"><sup>*</sup></span></label>
+                        <input type="text" name="name" class="form-control text-dark font-weight-bold name"
+                            placeholder="Name" autocomplete="off" required maxlength="40">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Số Tray<span style="color: red;"><sup>*</sup></span></label>
+                            <input type="number" name="block" class="form-control text-dark font-weight-bold block"
+                                placeholder="Số tray" autocomplete="off" min="1" max="144" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Số Port/Tray<span style="color: red;"><sup>*</sup></span></label>
+                            <select type="number" name="port" class="form-control port" required>
+                                <option value="12">12</option>
+                                <option value="24">24</option>
+                                <option value="36">36</option>
+                                <option value="48">48</option>
+                                <option value="60">60</option>
+                                <option value="72">72</option>
+                                <option value="84">84</option>
+                                <option value="96">96</option>
+                                <option value="108">108</option>
+                                <option value="120">120</option>
+                                <option value="132">132</option>
+                                <option value="144">144</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="desc">Mô tả</label>
+                        <input type="text" name="desc" class="form-control text-dark desc" placeholder="Mô tả"
+                            autocomplete="off" maxlength="40">
+                    </div>
+                    <div class="form-group">
+                        <label for="">POP<span style="color: red;"><sup>*</sup></span></label>
+                        <select class="form-control pop" name="pop" required>
+                            <option></option>
+                        </select>
+                    </div>
+                    <span style="color: red; font-size: 11px;">* Trường bắt buộc điền/chọn</span>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-secondary font-weight-bold"
+                            data-dismiss="modal">CLOSE</button>
+                        <button type="submit" class="btn btn-primary font-weight-bold" id="cb2Submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
